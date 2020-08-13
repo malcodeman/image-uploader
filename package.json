@@ -1,0 +1,31 @@
+{
+  "name": "image-uploader",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "parcel build src/index.js",
+    "lint": "eslint src/**"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malcodeman/image-uploader.git"
+  },
+  "author": "malcodeman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/malcodeman/image-uploader/issues"
+  },
+  "homepage": "https://github.com/malcodeman/image-uploader#readme",
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-plugin-react": "^7.20.6",
+    "parcel": "^2.0.0-beta.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.1"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  }
+}
