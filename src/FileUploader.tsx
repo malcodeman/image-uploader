@@ -26,7 +26,9 @@ function FileUploader(props: props) {
       padding="4"
       border="2px dashed rgba(0,0,0,0.1)"
       alignItems="center"
+      justifyContent="center"
       borderRadius="md"
+      height="100%"
       {...getRootProps()}
     >
       <Text mb="2">Drop files here to upload...</Text>
