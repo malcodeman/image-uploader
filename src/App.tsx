@@ -7,16 +7,13 @@ import {
   TabPanels,
   TabPanel,
   Icon,
-  Input,
-  InputGroup,
-  InputRightElement,
-  IconButton,
 } from "@chakra-ui/react";
 import { FiPaperclip, FiLink2, FiCamera } from "react-icons/fi";
 import { FaUnsplash, FaGoogleDrive, FaDropbox } from "react-icons/fa";
 import { map } from "ramda";
 
 import FileUploader from "./FileUploader";
+import LinkUploader from "./LinkUploader";
 
 const SIDEBAR = [
   {
@@ -67,21 +64,7 @@ function App() {
               <FileUploader onDrop={onDrop} />
             </TabPanel>
             <TabPanel height="100%">
-              <Center height="100%">
-                <Container maxW="96">
-                  <InputGroup size="md">
-                    <Input placeholder="Enter a URL" />
-                    <InputRightElement>
-                      <IconButton
-                        type="submit"
-                        size="md"
-                        aria-label="Import"
-                        icon={<FiLink2 size={16} />}
-                      />
-                    </InputRightElement>
-                  </InputGroup>
-                </Container>
-              </Center>
+              <LinkUploader />
             </TabPanel>
             <TabPanel>camera</TabPanel>
             <TabPanel>unsplash</TabPanel>
