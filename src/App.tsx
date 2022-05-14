@@ -9,7 +9,12 @@ import {
   Icon,
 } from "@chakra-ui/react";
 import { FiPaperclip, FiLink2, FiCamera } from "react-icons/fi";
-import { FaUnsplash, FaGoogleDrive, FaDropbox } from "react-icons/fa";
+import {
+  FaUnsplash,
+  FaGoogleDrive,
+  FaDropbox,
+  FaFacebook,
+} from "react-icons/fa";
 import { map } from "ramda";
 
 import FileUploader from "./FileUploader";
@@ -40,6 +45,10 @@ const SIDEBAR = [
     icon: FaDropbox,
     value: "dropbox",
   },
+  {
+    icon: FaFacebook,
+    value: "facebook",
+  },
 ];
 
 function App() {
@@ -52,7 +61,7 @@ function App() {
           <TabList>
             {map(
               (item) => (
-                <Tab>
+                <Tab key={item.value}>
                   <Icon as={item.icon} />
                 </Tab>
               ),
@@ -70,6 +79,7 @@ function App() {
             <TabPanel>unsplash</TabPanel>
             <TabPanel>drive</TabPanel>
             <TabPanel>dropbox</TabPanel>
+            <TabPanel>facebook</TabPanel>
           </TabPanels>
         </Tabs>
       </Container>
