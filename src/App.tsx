@@ -24,30 +24,37 @@ const SIDEBAR = [
   {
     icon: FiPaperclip,
     value: "device",
+    isDisabled: false,
   },
   {
     icon: FiLink2,
     value: "link",
+    isDisabled: false,
   },
   {
     icon: FiCamera,
     value: "camera",
+    isDisabled: false,
   },
   {
     icon: FaUnsplash,
     value: "unsplash",
+    isDisabled: true,
   },
   {
     icon: FaGoogleDrive,
     value: "drive",
+    isDisabled: true,
   },
   {
     icon: FaDropbox,
     value: "dropbox",
+    isDisabled: true,
   },
   {
     icon: FaFacebook,
     value: "facebook",
+    isDisabled: true,
   },
 ];
 
@@ -57,11 +64,11 @@ function App() {
   return (
     <Center minHeight={"100vh"}>
       <Container maxW={"container.sm"}>
-        <Tabs size="lg" orientation="vertical">
+        <Tabs size="lg" orientation="vertical" isLazy>
           <TabList>
             {map(
               (item) => (
-                <Tab key={item.value}>
+                <Tab key={item.value} isDisabled={item.isDisabled}>
                   <Icon as={item.icon} />
                 </Tab>
               ),
