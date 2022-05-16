@@ -12,7 +12,7 @@ File picker inspired by [filestack](https://www.filestack.com/docs/uploads/picke
 git clone https://github.com/malcodeman/image-uploader.git
 cd image-uploader
 npm install
-npm dev
+npm start
 ```
 
 ## License
