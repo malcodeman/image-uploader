@@ -6,6 +6,8 @@
 
 File picker inspired by [filestack](https://www.filestack.com/docs/uploads/pickers/web/).
 
+![Screenshot](readme/screenshot.png)
+
 ## Getting started
 
 ```
